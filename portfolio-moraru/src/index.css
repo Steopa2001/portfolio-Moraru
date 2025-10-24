@@ -1,0 +1,26 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 180px;
+}
+
+.badge.text-bg-light {
+  background-color: #f8f9fa;
+}
+
+section {
+  scroll-margin-top: 72px;
+}
+
+.img-col .stefan-img {
+  max-width: 250px;
+}
+
+@media all and (max-width: 500px) {
+  .img-col .stefan-img  {
+    display: none;
+  }
+}
