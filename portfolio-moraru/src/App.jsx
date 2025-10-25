@@ -23,13 +23,13 @@ const projectsData = [
     codeUrl: "https://github.com/tuo-utente/boolflix",
   },
   {
-    title: "Boolzapp",
+    title: "",
     description:
-      "Chat app stile WhatsApp con lista contatti, messaggi, filtri e notifiche.",
-    tech: ["Vue/React", "Local Storage"],
-    image: "https://via.placeholder.com/800x500?text=Boolzapp+Screenshot",
-    demoUrl: "https://example.com/boolzapp-demo",
-    codeUrl: "https://github.com/tuo-utente/boolzapp",
+      "",
+    tech: ["", ""],
+    image: "",
+    demoUrl: "",
+    codeUrl: "",
   },
 ];
 
