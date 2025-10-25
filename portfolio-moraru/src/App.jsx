@@ -1,7 +1,6 @@
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
-
 const BASE = import.meta.env.BASE_URL;
 
 const projectsData = [
@@ -64,9 +63,10 @@ export default function App() {
                   Guarda i progetti
                 </a>
                 <a
-                  href="/CV_NomeCognome.pdf"
+                  href={`${BASE}CV Moraru Stefan.pdf`}
                   className="btn btn-outline-primary"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <i className="fa-solid fa-file-arrow-down me-2"></i>
                   Scarica CV
