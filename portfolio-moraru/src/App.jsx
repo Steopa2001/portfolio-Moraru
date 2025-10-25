@@ -1,5 +1,6 @@
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import { useEffect, useState } from "react";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -36,13 +37,21 @@ const projectsData = [
 export default function App() {
   const year = new Date().getFullYear();
 
+   const [visible, setVisible] = useState(false);
+
+     useEffect(() => {
+    const timer = setTimeout(() => setVisible(true), 200);
+    return () => clearTimeout(timer);
+  }, []);
+  
+
   return (
     <>
       <Header />
 
       {/* HERO */}
       <header id="home" className="py-5 bg-light">
-        <div className="container py-4">
+        <div className={`container py-4 fade-section ${visible ? "visible" : ""}`}>
           <div className="row align-items-center g-4">
             <div className="col-12 col-lg-7">
               <p className="text-uppercase text-muted small mb-2">
@@ -50,7 +59,6 @@ export default function App() {
               </p>
               <h1 className="display-5 fw-bold mb-3">
                 Ciao, sono <span className="text-primary">Moraru Stefan</span>{" "}
-                👋
               </h1>
               <p className="lead text-muted">
                 Sviluppatore front-end Junior con focus su React, dedicato alla
