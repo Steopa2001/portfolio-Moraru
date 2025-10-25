@@ -22,15 +22,15 @@ const projectsData = [
     demoUrl: "https://arcadia-react-production.up.railway.app/",
     codeUrl: "https://github.com/tuo-utente/boolflix",
   },
-  {
-    title: "",
-    description:
-      "",
-    tech: ["", ""],
-    image: "",
-    demoUrl: "",
-    codeUrl: "",
-  },
+  // {
+  //   title: "",
+  //   description:
+  //     "",
+  //   tech: ["", ""],
+  //   image: "",
+  //   demoUrl: "",
+  //   codeUrl: "",
+  // },
 ];
 
 export default function App() {

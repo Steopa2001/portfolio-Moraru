@@ -19,8 +19,221 @@ section {
   max-width: 250px;
 }
 
+
+/* Palette base */
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1e40af;
+  --light-bg: #f8fafc;
+  --text: #1e293b;
+  --muted: #64748b;
+  --radius: 14px;
+  --shadow-sm: 0 4px 14px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile generale */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  background-color: #fff;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: var(--primary) !important;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: var(--text) !important;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--primary);
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Hero */
+#home {
+  background: linear-gradient(180deg, var(--light-bg) 0%, #ffffff 100%);
+}
+
+#home .display-5 {
+  color: var(--text);
+}
+
+#home .text-primary {
+  color: var(--primary) !important;
+}
+
+.btn {
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  color: #fff !important;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Sezione Chi sono */
+#about h2.h3 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+#about h2.h3::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  margin-top: 6px;
+  background: linear-gradient(90deg, var(--primary), color-mix(in oklab, var(--primary), white 30%));
+  border-radius: 3px;
+}
+
+.badge.text-bg-light {
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+}
+
+.badge.text-bg-light:hover {
+  transform: translateY(-2px);
+  border-color: var(--primary);
+}
+
+/* Sezione progetti */
+#projects {
+  background: linear-gradient(180deg, var(--light-bg), #ffffff);
+}
+
+.card {
+  border-radius: var(--radius);
+  border: 1px solid #e2e8f0 !important;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.card-title {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Sezione contatti */
+#contact {
+  background-color: #fff;
+}
+
+#contact .btn {
+  border-radius: 10px;
+  border-color: #cbd5e1;
+  transition: all 0.2s ease;
+}
+
+#contact .btn:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  border-top: 1px solid #e2e8f0;
+}
+
+footer span {
+  color: var(--muted);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Immagine profilo */
+.img-col .stefan-img {
+  max-width: 260px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
 @media all and (max-width: 500px) {
-  .img-col .stefan-img  {
+  .img-col .stefan-img {
     display: none;
   }
 }
