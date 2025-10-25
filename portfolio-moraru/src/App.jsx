@@ -1,5 +1,6 @@
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import imgCv from "../public/img-cv.png"
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -75,7 +76,7 @@ export default function App() {
             <div className="img-col col-12 col-lg-5 text-center">
               <img
                 className="stefan-img img-fluid rounded-4 shadow-sm"
-                src={`${BASE}img-cv.png`}
+                src={imgCv}
                 alt="Ritratto del developer"
               />
             </div>
