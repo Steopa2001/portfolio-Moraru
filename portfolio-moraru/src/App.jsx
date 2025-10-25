@@ -1,13 +1,15 @@
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 
+const BASE = import.meta.env.BASE_URL;
+
 const projectsData = [
   {
     title: "Spotify Clone",
     description:
       "Replica minimale dell’interfaccia di Spotify con responsive layout e player fittizio.",
     tech: ["HTML", "CSS"],
-    image: "../public/spotify-clone.png",
+    image: `${BASE}spotify-clone.png`,
     demoUrl: "https://steopa2001.github.io/html-css-spotifyweb/",
     codeUrl: "https://github.com/Steopa2001/html-css-spotifyweb",
   },
@@ -16,7 +18,7 @@ const projectsData = [
     description:
       "E-commerce di giochi da tavolo sviluppato in team, con interfaccia moderna e funzioni complete di navigazione, carrello e gestione ordini.",
     tech: ["React", "Axios", "Bootstrap", "Node.js", "Express", "MySQL"],
-    image: "../public/Arcadia-project-work.png",
+    image: `${BASE}Arcadia-project-work.png`,
     demoUrl: "https://arcadia-react-production.up.railway.app/",
     codeUrl: "https://github.com/tuo-utente/boolflix",
   },
