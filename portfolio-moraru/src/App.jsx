@@ -84,7 +84,7 @@ export default function App() {
             <div className="img-col col-12 col-lg-5 text-center">
               <img
                 className="stefan-img img-fluid rounded-4 shadow-sm"
-                src={`${BASE}img-cv.png`}
+                src={`${BASE}cv-image.png`}
                 alt="Ritratto del developer"
               />
             </div>
