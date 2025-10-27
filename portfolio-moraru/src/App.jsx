@@ -17,8 +17,8 @@ const projectsData = [
   {
     title: "Project Work - Arcadia",
     description:
-      "E-commerce di giochi da tavolo sviluppato in team, con interfaccia moderna e funzioni complete di navigazione, carrello e gestione ordini.",
-    tech: ["React", "Axios", "Bootstrap", "Node.js", "Express", "MySQL"],
+      "E-commerce di giochi da tavolo sviluppato in team durante il corso Boolean. Mi sono occupato della parte front-end, realizzando i componenti principali in React e gestendo le funzionalità interattive con Axios e Bootstrap, in integrazione con un back-end Node.js/Express/MySQL.",
+    tech: ["React", "Axios","Javascript", "Bootstrap", "CSS"],
     image: `${BASE}Arcadia-project-work.png`,
     demoUrl: "https://arcadia-react-production.up.railway.app/",
     codeUrl: "https://github.com/tuo-utente/boolflix",
