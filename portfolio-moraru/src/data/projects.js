@@ -17,7 +17,7 @@ const projectsData = [
     tech: ["React", "Axios", "Javascript", "Bootstrap", "CSS"],
     image: `${BASE}Arcadia-project-work.png`,
     demoUrl: "https://arcadia-react-production.up.railway.app/",
-    codeUrl: "https://github.com/tuo-utente/boolflix",
+    codeUrl: "https://github.com/Steopa2001/Arcadia-react",
   },
   // {
   //   title: "",
