@@ -19,14 +19,14 @@ const projectsData = [
     demoUrl: "https://arcadia-react-production.up.railway.app/",
     codeUrl: "https://github.com/Steopa2001/Arcadia-react",
   },
-  // {
-  //   title: "",
-  //   description:
-  //     "",
-  //   tech: ["", ""],
-  //   image: "",
-  //   demoUrl: "",
-  //   codeUrl: "",
-  // },
+  {
+    title: "WhatsApp Clone with AI Chat",
+    description:
+      "Web app responsive ispirata a WhatsApp Web, sviluppata con HTML, CSS e JavaScript. Integra un sistema di risposte automatiche basato sulle API Gemini di Google, che genera messaggi in tempo reale simulando una conversazione tra amici.",
+    tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Gemini API"],
+    image: `${BASE}whatsapp-clone.png`,
+    demoUrl: "https://whatsapp-clone-m3wz.onrender.com/",
+    codeUrl: "https://github.com/Steopa2001/whatsapp-clone",
+  },
 ];
 export default projectsData;
