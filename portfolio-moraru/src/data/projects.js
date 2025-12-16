@@ -20,13 +20,14 @@ const projectsData = [
     codeUrl: "https://github.com/Steopa2001/Arcadia-react",
   },
   {
-    title: "WhatsApp Clone with AI Chat",
+    title: "SmartphoneHub – Comparatore",
     description:
-      "Web app responsive ispirata a WhatsApp Web, sviluppata con HTML, CSS e JavaScript. Integra un sistema di risposte automatiche basato sulle API Gemini di Google, che genera messaggi in tempo reale simulando una conversazione tra amici.",
-    tech: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "Gemini API"],
-    image: `${BASE}whatsapp-clone.png`,
-    demoUrl: "https://whatsapp-clone-m3wz.onrender.com/",
-    codeUrl: "https://github.com/Steopa2001/whatsapp-clone",
+      "SPA sviluppata con React e Vite che permette di sfogliare, filtrare e confrontare smartphone, salvare i preferiti e visualizzare i dettagli di ogni modello. Front-end in React con backend JSON fittizio esposto via API.",
+    tech: ["React", "Vite", "JavaScript", "Bootstrap", "CSS"],
+    image: `${BASE}smartphonehub.png`, 
+    demoUrl: "https://smartphonehub-front.onrender.com/",
+    codeUrl:
+      "https://github.com/Steopa2001/progetto-finale-spec-frontend-front",
   },
 ];
 export default projectsData;
