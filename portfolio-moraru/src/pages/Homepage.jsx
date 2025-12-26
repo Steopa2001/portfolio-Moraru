@@ -21,15 +21,16 @@ export default function Homepage() {
           <div className="row align-items-center g-4">
             <div className="col-12 col-lg-7">
               <p className="text-uppercase text-muted small mb-2">
-                Front-End Developer
+                Junior Full‑Stack Web Developer
               </p>
               <h1 className="display-5 fw-bold mb-3">
                 Ciao, sono <span className="text-primary">Moraru Stefan</span>{" "}
               </h1>
               <p className="lead text-muted">
-                Sviluppatore front-end Junior con focus su React, dedicato alla
-                creazione di interfacce moderne pensate per offrire la migliore
-                esperienza utente.
+                Full‑Stack Web Developer con focus sul front‑end. Lavoro con
+                React, HTML, CSS e JavaScript per creare interfacce moderne e
+                responsive, integrando applicazioni con API REST e back‑end in
+                Node.js, Express e MySQL.
               </p>
               <div className="d-flex gap-3 mt-4">
                 <a href="#projects" className="btn btn-primary">
@@ -37,7 +38,7 @@ export default function Homepage() {
                   Guarda i progetti
                 </a>
                 <a
-                  href={`${BASE}cv-aggiornato-Stefan-Moraru.pdf`}
+                  href={`${BASE}cv-Stefan-Moraru-definitivo.pdf`}
                   className="btn btn-outline-primary"
                   target="_blank"
                   rel="noreferrer"
@@ -63,11 +64,13 @@ export default function Homepage() {
         <div className="container">
           <h2 className="h3 fw-bold mb-3">Chi sono</h2>
           <p className="text-muted">
-            Sono uno sviluppatore front-end, specializzato nello sviluppo di
-            applicazioni web responsive e accessibili. Ho completato un corso
-            intensivo di 700 ore come Web Developer Full-Stack con Boolean,
-            durante il quale ho realizzato diversi progetti pratici e appreso le
-            migliori pratiche del settore.
+            Sono uno sviluppatore web junior con competenze full‑stack e un
+            forte orientamento allo sviluppo front‑end. Mi occupo di creare
+            applicazioni web responsive e accessibili, dalla UI all’integrazione
+            con il back‑end. Ho completato un corso intensivo di 700 ore come
+            Full‑Stack Web Developer con Boolean, durante il quale ho realizzato
+            diversi progetti pratici utilizzando HTML, CSS, JavaScript, React
+            per il front‑end e Node.js, Express e MySQL per il back‑end.
           </p>
           <div className="mt-4">
             <h3 className="h6 text-uppercase text-muted mb-3">Competenze</h3>
