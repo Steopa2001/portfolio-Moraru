@@ -38,7 +38,7 @@ export default function Homepage() {
                   Guarda i progetti
                 </a>
                 <a
-                  href={`${BASE}cv-Stefan-Moraru-definitivo.pdf`}
+                  href={`${BASE}Cv-Moraru-Stefan.pdf`}
                   className="btn btn-outline-primary"
                   target="_blank"
                   rel="noreferrer"
