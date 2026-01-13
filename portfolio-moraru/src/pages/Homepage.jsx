@@ -67,7 +67,7 @@ export default function Homepage() {
             Sono uno sviluppatore web junior con competenze full‑stack e un
             forte orientamento allo sviluppo front‑end. Mi occupo di creare
             applicazioni web responsive e accessibili, dalla UI all’integrazione
-            con il back‑end. Ho completato un corso intensivo di 600 ore come
+            con il back‑end. Ho completato un corso intensivo di oltre 600 ore come
             Full‑Stack Web Developer con Boolean, durante il quale ho realizzato
             diversi progetti pratici utilizzando HTML, CSS, JavaScript, React
             per il front‑end e Node.js, Express e MySQL per il back‑end.
