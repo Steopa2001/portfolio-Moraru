@@ -1,5 +1,6 @@
 const BASE = import.meta.env.BASE_URL;
 
+//Progetti
 const projectsData = [
   {
     title: "Spotify Clone",
