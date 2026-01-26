@@ -80,6 +80,7 @@ export default function Homepage() {
                 "CSS3",
                 "JavaScript",
                 "Bootstrap",
+                "Tailwind", 
                 "Node.js",
                 "Express",
                 "React",
