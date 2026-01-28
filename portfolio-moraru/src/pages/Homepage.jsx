@@ -24,13 +24,12 @@ export default function Homepage() {
                 Junior Full‑Stack Web Developer
               </p>
               <h1 className="display-5 fw-bold mb-3">
-                Ciao, sono <span className="text-primary">Moraru Stefan</span>{" "}
+                Ciao, sono{" "}
+                <span className="text-primary">Moraru Stefan</span>{" "}
               </h1>
               <p className="lead text-muted">
-                Full‑Stack Web Developer con focus sul front‑end. Lavoro con
-                React, HTML, CSS e JavaScript per creare interfacce moderne e
-                responsive, integrando applicazioni con API REST e back‑end in
-                Node.js, Express e MySQL.
+                Creo interfacce web moderne, responsive e intuitive, con grande
+                attenzione all’esperienza utente.
               </p>
               <div className="d-flex gap-3 mt-4">
                 <a href="#projects" className="btn btn-primary">
@@ -65,12 +64,11 @@ export default function Homepage() {
           <h2 className="h3 fw-bold mb-3">Chi sono</h2>
           <p className="text-muted">
             Sono uno sviluppatore web junior con competenze full‑stack e un
-            forte orientamento allo sviluppo front‑end. Mi occupo di creare
-            applicazioni web responsive e accessibili, dalla UI all’integrazione
-            con il back‑end. Ho completato un corso intensivo di oltre 600 ore come
-            Full‑Stack Web Developer con Boolean, durante il quale ho realizzato
-            diversi progetti pratici utilizzando HTML, CSS, JavaScript, React
-            per il front‑end e Node.js, Express e MySQL per il back‑end.
+            forte orientamento al front-end. Ho completato un corso intensivo di
+            oltre 600 ore come Full‑Stack Web Developer con Boolean, durante il
+            quale ho realizzato diversi progetti concreti. Lavoro con React,
+            HTML, CSS e JavaScript per il front-end, e Node.js, Express e MySQL
+            per il back-end.
           </p>
           <div className="mt-4">
             <h3 className="h6 text-uppercase text-muted mb-3">Competenze</h3>
@@ -80,7 +78,7 @@ export default function Homepage() {
                 "CSS3",
                 "JavaScript",
                 "Bootstrap",
-                "Tailwind", 
+                "Tailwind",
                 "Node.js",
                 "Express",
                 "React",
