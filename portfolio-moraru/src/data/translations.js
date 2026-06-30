@@ -103,6 +103,16 @@ export const SITE_TEXT = {
         demo: "Demo",
         placeholderTitle: "In fase di lavorazione",
         placeholderDesc: "Questo progetto sarà disponibile a breve.",
+        projects: [
+          {
+            title: "Garavaglia Auto",
+            description:
+              "Sito vetrina per una concessionaria di automobili. Ho replicato il design da Figma in WordPress, utilizzando ACF per i componenti dinamici e PHP per la logica personalizzata. Realizzato in coppia con un collega.",
+            tech: ["WordPress", "ACF", "PHP", "Figma"],
+            image: "garavagliaauto.webp",
+            demoUrl: "https://www.garavagliaauto.it/",
+          },
+        ],
       },
       certificates: {
         openLabel: "Apri",
@@ -230,6 +240,16 @@ export const SITE_TEXT = {
         demo: "Demo",
         placeholderTitle: "Work in progress",
         placeholderDesc: "This project will be available soon.",
+        projects: [
+          {
+            title: "Garavaglia Auto",
+            description:
+              "Showcase website for a car dealership. I implemented the Figma design in WordPress, using ACF for dynamic components and PHP for custom logic. Built together with a colleague.",
+            tech: ["WordPress", "ACF", "PHP", "Figma"],
+            image: "garavagliaauto.webp",
+            demoUrl: "https://www.garavagliaauto.it/",
+          },
+        ],
       },
       certificates: {
         openLabel: "Open",
@@ -357,6 +377,16 @@ export const SITE_TEXT = {
         demo: "Demo",
         placeholderTitle: "En construccion",
         placeholderDesc: "Este proyecto estará disponible pronto.",
+        projects: [
+          {
+            title: "Garavaglia Auto",
+            description:
+              "Sitio web para un concesionario de automoviles. Replique el diseno de Figma en WordPress, usando ACF para los componentes dinamicos y PHP para la logica personalizada. Realizado junto a un companero.",
+            tech: ["WordPress", "ACF", "PHP", "Figma"],
+            image: "garavagliaauto.webp",
+            demoUrl: "https://www.garavagliaauto.it/",
+          },
+        ],
       },
       certificates: {
         openLabel: "Abrir",
@@ -484,6 +514,16 @@ export const SITE_TEXT = {
         demo: "Demo",
         placeholderTitle: "În lucru",
         placeholderDesc: "Acest proiect va fi disponibil în curând.",
+        projects: [
+          {
+            title: "Garavaglia Auto",
+            description:
+              "Site de prezentare pentru un dealer auto. Am replicat design-ul din Figma in WordPress, folosind ACF pentru componentele dinamice si PHP pentru logica personalizata. Realizat impreuna cu un coleg.",
+            tech: ["WordPress", "ACF", "PHP", "Figma"],
+            image: "garavagliaauto.webp",
+            demoUrl: "https://www.garavagliaauto.it/",
+          },
+        ],
       },
       certificates: {
         openLabel: "Deschide",

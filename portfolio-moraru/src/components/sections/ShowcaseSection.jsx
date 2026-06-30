@@ -47,22 +47,59 @@ export default function ShowcaseSection({ showcase, certificatesText }) {
           {showcaseTab === "projects" && (
             <div className={`reveal ${tabAnim ? "is-visible" : ""}`}>
               <div className="projects-layout">
-                {[0, 1, 2].map((i) => (
+                {showcase.projects.map((p, i) => (
                   <article
-                    key={i}
+                    key={p.title}
                     ref={projectItemRef(i)}
-                    className={`project-card project-mini project-placeholder ${projectItemsVisible.has(i) ? "in-view" : ""}`}
+                    className={`project-card project-mini ${projectItemsVisible.has(i) ? "in-view" : ""}`}
                     onMouseMove={setCardGlow}
                   >
-                    <div className="project-placeholder-thumb">
-                      <span className="project-placeholder-icon" aria-hidden="true">🚧</span>
-                    </div>
-                    <div className="project-mini-body d-flex flex-column align-items-center justify-content-center text-center gap-2 py-3">
-                      <h3 className="h5 card-title mb-1">{showcase.placeholderTitle}</h3>
-                      <p className="text-muted small mb-0">{showcase.placeholderDesc}</p>
+                    <img
+                      src={`${BASE}${p.image}`}
+                      className="project-thumb project-mini-thumb"
+                      alt={`Screenshot - ${p.title}`}
+                    />
+                    <div className="project-mini-body">
+                      <h3 className="h5 card-title mb-2">{p.title}</h3>
+                      <p className="text-muted small mb-3 project-mini-desc">{p.description}</p>
+                      <div className="project-tags project-tags-mini mb-3">
+                        {p.tech.map((t) => (
+                          <span key={t} className="project-tag">{t}</span>
+                        ))}
+                      </div>
+                      <a
+                        href={p.demoUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn btn-primary btn-sm w-100"
+                      >
+                        {showcase.demo}
+                      </a>
                     </div>
                   </article>
                 ))}
+
+                {Array.from({ length: Math.max(0, 3 - showcase.projects.length) }).map(
+                  (_, idx) => {
+                    const i = showcase.projects.length + idx;
+                    return (
+                      <article
+                        key={`placeholder-${i}`}
+                        ref={projectItemRef(i)}
+                        className={`project-card project-mini project-placeholder ${projectItemsVisible.has(i) ? "in-view" : ""}`}
+                        onMouseMove={setCardGlow}
+                      >
+                        <div className="project-placeholder-thumb">
+                          <span className="project-placeholder-icon" aria-hidden="true">🚧</span>
+                        </div>
+                        <div className="project-mini-body d-flex flex-column align-items-center justify-content-center text-center gap-2 py-3">
+                          <h3 className="h5 card-title mb-1">{showcase.placeholderTitle}</h3>
+                          <p className="text-muted small mb-0">{showcase.placeholderDesc}</p>
+                        </div>
+                      </article>
+                    );
+                  },
+                )}
               </div>
             </div>
           )}
