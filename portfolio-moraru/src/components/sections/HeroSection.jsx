@@ -4,7 +4,7 @@ import Header from "../Header.jsx";
 
 const BASE = import.meta.env.BASE_URL;
 
-export default function HeroSection({ text, language, onLanguageChange, headerText }) {
+export default function HeroSection({ text, headerText }) {
   const [heroRef, heroVisible] = useReveal();
   const [typedHeroText, setTypedHeroText] = useState("");
   const [typingDone, setTypingDone] = useState(false);
@@ -70,11 +70,7 @@ export default function HeroSection({ text, language, onLanguageChange, headerTe
       <div ref={heroRef} className="container py-4">
         <div className="row align-items-center g-4">
           <div className="img-col col-12 col-lg-5 text-center align-self-lg-end">
-            <Header
-              language={language}
-              onLanguageChange={onLanguageChange}
-              text={headerText}
-            />
+            <Header text={headerText} />
             <img
               className="stefan-img img-fluid"
               src={`${BASE}cv-image.webp`}

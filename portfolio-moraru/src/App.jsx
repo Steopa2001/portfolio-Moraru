@@ -249,15 +249,16 @@ export default function App() {
       </div>
       <div className="bg-grain" aria-hidden="true"></div>
       <main>
-        <Homepage
-          language={language}
-          onLanguageChange={setLanguage}
-          headerText={text.header}
-          text={text.homepage}
-        />
+        <Homepage headerText={text.header} text={text.homepage} />
       </main>
       <BackToTop text={text.backToTop} />
-      <Footer year={year} text={text.footer} />
+      <Footer
+        year={year}
+        text={text.footer}
+        language={language}
+        onLanguageChange={setLanguage}
+        headerText={text.header}
+      />
     </>
   );
 }

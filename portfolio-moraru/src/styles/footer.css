@@ -17,3 +17,20 @@ footer a {
 }
 
 footer a:hover { text-decoration: underline; }
+
+.footer-lang-switch {
+  position: relative;
+}
+
+.footer-lang-switch .lang-menu-list {
+  top: auto;
+  bottom: calc(100% + .48rem);
+  right: 0;
+  left: auto;
+}
+
+@media (max-width: 575.98px) {
+  .footer-lang-switch {
+    margin-right: 4rem;
+  }
+}
