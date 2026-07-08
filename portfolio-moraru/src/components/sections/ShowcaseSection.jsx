@@ -169,6 +169,9 @@ export default function ShowcaseSection({ showcase, certificatesText }) {
                   { alt: "Express", src: `${BASE}express-log.png` },
                   { alt: "MySQL", src: `${BASE}mySQL.png` },
                   { alt: "Git", src: `${BASE}git.png` },
+                  { alt: "WordPress", src: `${BASE}wordpress_logo.webp` },
+                  { alt: "PHP", src: `${BASE}PHP-logo.webp` },
+                  { alt: "Figma", src: `${BASE}Figma-logo.png` },
                 ].map((t) => (
                   <div className="stack-item" key={t.alt} title={t.alt}>
                     <img src={t.src} alt={t.alt} />
