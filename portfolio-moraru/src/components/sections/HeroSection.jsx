@@ -65,12 +65,18 @@ export default function HeroSection({ text }) {
 
   return (
     <header id="home" className="py-5 section-surface">
-      <div
-        ref={heroRef}
-        className={`container py-4 reveal ${heroVisible ? "is-visible" : ""}`}
-      >
+      <div className="hero-bg-decor" aria-hidden="true"></div>
+      <div ref={heroRef} className="container py-4">
         <div className="row align-items-center g-4">
-          <div className="col-12 col-lg-7">
+          <div className="img-col col-12 col-lg-5 text-center align-self-lg-end">
+            <img
+              className="stefan-img img-fluid"
+              src={`${BASE}cv-image.webp`}
+              alt={text.portraitAlt}
+            />
+          </div>
+
+          <div className={`col-12 col-lg-7 reveal ${heroVisible ? "is-visible" : ""}`}>
             <p className="text-uppercase text-muted small mb-2">{text.role}</p>
             <h1
               className="display-5 fw-bold mb-3 hero-typing-title"
@@ -103,14 +109,6 @@ export default function HeroSection({ text }) {
                 {text.ctaDownloadCv}
               </a>
             </div>
-          </div>
-
-          <div className="img-col col-12 col-lg-5 text-center">
-            <img
-              className="stefan-img img-fluid"
-              src={`${BASE}cv-image.webp`}
-              alt={text.portraitAlt}
-            />
           </div>
         </div>
       </div>
