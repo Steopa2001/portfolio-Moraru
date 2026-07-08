@@ -114,6 +114,12 @@ export default function ShowcaseSection({ showcase, certificatesText }) {
                     img: `${BASE}Boolean-img.webp`,
                     file: `${BASE}Certificato-Boolean.pdf`,
                   },
+                  {
+                    title: "Udemy • HTML e CSS: corso completo da zero a esperto",
+                    year: "2025",
+                    img: `${BASE}corso-html-css.webp`,
+                    file: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-aaf122a8-cb78-4bcd-9f62-e09b1a02916f.pdf",
+                  },
                 ].map((c) => (
                   <div className="col-12 col-md-6 col-lg-4" key={c.title}>
                     <div
