@@ -8,10 +8,6 @@ export default function Header({ language, onLanguageChange, text }) {
     LANGUAGE_OPTIONS.find((option) => option.code === language) ||
     LANGUAGE_OPTIONS[0];
 
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
-
   const [active, setActive] = useState("home");
 
   useEffect(() => {
@@ -103,82 +99,41 @@ export default function Header({ language, onLanguageChange, text }) {
     </div>
   );
 
+  const navItems = [
+    { id: "about", label: text.nav.about },
+    { id: "projects", label: text.nav.projects },
+    { id: "contact", label: text.nav.contact },
+  ];
+
   return (
-    <nav className="navbar navbar-expand-lg sticky-top main-nav">
-      <div className="nav-shell">
-        <div className="container nav-shell-inner">
-          <a
-            className="nav-brand"
-            href="#home"
-            onClick={() => setIsOpen(false)}
-          >
-            <span className="nav-brand-mark" aria-hidden="true">
-              <i className="fa-solid fa-code"></i>
-            </span>
-            <span className="nav-brand-text">
-              <span className="nav-brand-title">Moraru Stefan</span>
-              <span className="nav-brand-sub">{text.brandRole}</span>
-            </span>
-          </a>
-
-          {renderLanguageMenu("lang-switch-desktop")}
-
-          <button
-            className={`navbar-toggler border-0 nav-toggle ${isOpen ? "open" : ""}`}
-            type="button"
-            onClick={toggleNavbar}
-            aria-expanded={isOpen}
-            aria-label={text.toggleNavigationLabel}
-          >
-            {isOpen ? (
-              <i className="fa-solid fa-xmark"></i>
-            ) : (
-              <i className="fa-solid fa-bars"></i>
-            )}
-          </button>
-
-          <div
-            className={`collapse navbar-collapse nav-collapse ${isOpen ? "show" : ""}`}
-            id="nav"
-          >
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-menu">
-              <li className="nav-item">
-                <a
-                  className={`nav-link nav-pill ${active === "about" ? "active" : ""}`}
-                  href="#about"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <i className="fa-regular fa-user"></i>
-                  {text.nav.about}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link nav-pill ${active === "projects" ? "active" : ""}`}
-                  href="#projects"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <i className="fa-solid fa-layer-group"></i>
-                  {text.nav.projects}
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className={`nav-link nav-pill ${active === "contact" ? "active" : ""}`}
-                  href="#contact"
-                  onClick={() => setIsOpen(false)}
-                >
-                  <i className="fa-regular fa-envelope"></i>
-                  {text.nav.contact}
-                </a>
-              </li>
-              <li className="nav-item nav-lang-item">
-                <span className="nav-lang-label">{text.languageLabel}</span>
-                {renderLanguageMenu("lang-switch-mobile")}
-              </li>
-            </ul>
-          </div>
-        </div>
+    <nav className="hero-nav">
+      <button
+        type="button"
+        className={`hero-nav-toggle ${isOpen ? "open" : ""}`}
+        onClick={() => setIsOpen((prev) => !prev)}
+        aria-expanded={isOpen}
+        aria-controls="hero-nav-panel"
+        aria-label={text.toggleNavigationLabel}
+      >
+        <span className="hero-nav-toggle-bar" aria-hidden="true"></span>
+        <span className="hero-nav-toggle-bar" aria-hidden="true"></span>
+        <span className="hero-nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <div id="hero-nav-panel" className={`hero-nav-panel ${isOpen ? "show" : ""}`}>
+        <ul className="hero-nav-list">
+          {navItems.map((item) => (
+            <li key={item.id} className="hero-nav-item">
+              <a
+                href={`#${item.id}`}
+                className={`hero-nav-link ${active === item.id ? "active" : ""}`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+        {renderLanguageMenu("hero-lang-switch")}
       </div>
     </nav>
   );
