@@ -77,101 +77,6 @@
   60%, 100% { transform: rotate(0deg); }
 }
 
-/* hero image aura */
-.hero-photo-3d {
-  --hero-mx: 50%;
-  --hero-my: 50%;
-  --hero-shift-x: 0px;
-  --hero-shift-y: 0px;
-  position: relative;
-  display: inline-block;
-  isolation: isolate;
-  z-index: 0;
-  transition: filter .35s ease;
-}
-
-.hero-photo-3d::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: clamp(260px, 30vw, 420px);
-  aspect-ratio: 1;
-  transform: translate(-50%, -50%) scale(1);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-  background: radial-gradient(circle at 50% 50%, rgba(124,58,237,.55), rgba(34,211,238,.26) 45%, transparent 76%);
-  filter: blur(42px);
-  opacity: .8;
-  animation: hero-blob-breathe 9s ease-in-out infinite;
-  transition: opacity .4s ease, filter .4s ease;
-}
-
-.hero-photo-3d::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: clamp(272px, 31vw, 432px);
-  aspect-ratio: 1;
-  transform: translate(-50%, -50%) rotate(0deg);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-  background: conic-gradient(from 0deg, #7c3aed, #22d3ee, #a78bfa, #7c3aed);
-  -webkit-mask: radial-gradient(circle, transparent calc(100% - 2px), #000 calc(100% - 2px));
-  mask: radial-gradient(circle, transparent calc(100% - 2px), #000 calc(100% - 2px));
-  opacity: .55;
-  filter: drop-shadow(0 0 16px rgba(124,58,237,.35));
-  animation: hero-ring-spin 11s linear infinite;
-  transition: opacity .4s ease, filter .4s ease;
-}
-
-.hero-hover-glow {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: clamp(300px, 34vw, 470px);
-  aspect-ratio: 1;
-  transform: translate(-50%, -50%) scale(.94);
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 1;
-  opacity: 0;
-  background: radial-gradient(
-    circle at var(--hero-mx) var(--hero-my),
-    rgba(255,255,255,.22),
-    rgba(167,139,250,.20) 22%,
-    rgba(34,211,238,.16) 40%,
-    rgba(124,58,237,.08) 60%,
-    transparent 74%
-  );
-  filter: blur(12px) saturate(130%);
-  transition: opacity .28s ease, transform .34s cubic-bezier(.22,.61,.36,1);
-}
-
-.hero-photo-3d.is-hovering::before { opacity: 1; filter: blur(46px); }
-.hero-photo-3d.is-hovering::after  { opacity: .85; filter: drop-shadow(0 0 24px rgba(34,211,238,.42)); }
-
-.hero-photo-3d.is-hovering .hero-hover-glow {
-  opacity: .9;
-  transform: translate(
-    calc(-50% + var(--hero-shift-x)),
-    calc(-50% + var(--hero-shift-y))
-  ) scale(1.04);
-}
-
-@keyframes hero-blob-breathe {
-  0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: .7; }
-  50%       { transform: translate(-50%, -50%) scale(1.1); opacity: .92; }
-}
-
-@keyframes hero-ring-spin {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to   { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
 .img-col .stefan-img {
   display: block;
   position: relative;
@@ -197,19 +102,6 @@
 
 /* mobile hero overrides */
 @media (max-width: 500px) {
-  .hero-photo-3d::before {
-    width: clamp(240px, 70vw, 300px);
-    top: 47%;
-    opacity: .6;
-    filter: blur(34px);
-  }
-
-  .hero-photo-3d::after {
-    width: clamp(250px, 72vw, 312px);
-    top: 47%;
-    opacity: .4;
-  }
-
   #home .text-primary {
     display: inline-block;
     white-space: nowrap;

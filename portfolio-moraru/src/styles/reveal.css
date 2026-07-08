@@ -30,12 +30,4 @@
   .about-3d-content { transition: none; transform: none; }
 
   body::before { animation: none; transform: none; }
-
-  .hero-photo-3d::before,
-  .hero-photo-3d::after {
-    animation: none;
-    transform: translate(-50%, -50%);
-  }
-
-  .hero-hover-glow { display: none; }
 }

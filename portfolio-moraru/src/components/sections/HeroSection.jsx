@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import useReveal from "../../hooks/useReveal";
-import { setHeroGlow, resetHeroGlow } from "../../utils/cardGlow";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -107,18 +106,11 @@ export default function HeroSection({ text }) {
           </div>
 
           <div className="img-col col-12 col-lg-5 text-center">
-            <div
-              className="hero-photo-3d"
-              onPointerMove={setHeroGlow}
-              onPointerLeave={resetHeroGlow}
-            >
-              <span className="hero-hover-glow" aria-hidden="true"></span>
-              <img
-                className="stefan-img img-fluid"
-                src={`${BASE}cv-image.webp`}
-                alt={text.portraitAlt}
-              />
-            </div>
+            <img
+              className="stefan-img img-fluid"
+              src={`${BASE}cv-image.webp`}
+              alt={text.portraitAlt}
+            />
           </div>
         </div>
       </div>
