@@ -112,6 +112,14 @@ export const SITE_TEXT = {
             image: "garavagliaauto.webp",
             demoUrl: "https://www.garavagliaauto.it/",
           },
+          {
+            title: "MySafeDOC",
+            description:
+              "Landing page per un servizio di conformità normativa. Ho trasformato l'homepage da HTML/CSS statico a un sito WordPress dinamico, strutturando i contenuti con ACF flexible content per garantire al cliente piena autonomia nella gestione dei testi.",
+            tech: ["WordPress", "ACF", "PHP"],
+            image: "mysafedoc.webp",
+            demoUrl: "https://mysafedoc.cloud/",
+          },
         ],
       },
       certificates: {
@@ -248,6 +256,14 @@ export const SITE_TEXT = {
             tech: ["WordPress", "ACF", "PHP", "Figma"],
             image: "garavagliaauto.webp",
             demoUrl: "https://www.garavagliaauto.it/",
+          },
+          {
+            title: "MySafeDOC",
+            description:
+              "Landing page for a regulatory compliance service. I converted the homepage from static HTML/CSS into a dynamic WordPress site, structuring the content with ACF flexible content to give the client full autonomy in managing and updating the copy.",
+            tech: ["WordPress", "ACF", "PHP"],
+            image: "mysafedoc.webp",
+            demoUrl: "https://mysafedoc.cloud/",
           },
         ],
       },
@@ -386,6 +402,14 @@ export const SITE_TEXT = {
             image: "garavagliaauto.webp",
             demoUrl: "https://www.garavagliaauto.it/",
           },
+          {
+            title: "MySafeDOC",
+            description:
+              "Landing page para un servicio de cumplimiento normativo. Transforme la homepage de HTML/CSS estatico a un sitio WordPress dinamico, estructurando el contenido con ACF flexible content para brindar al cliente plena autonomia en la gestion de los textos.",
+            tech: ["WordPress", "ACF", "PHP"],
+            image: "mysafedoc.webp",
+            demoUrl: "https://mysafedoc.cloud/",
+          },
         ],
       },
       certificates: {
@@ -522,6 +546,14 @@ export const SITE_TEXT = {
             tech: ["WordPress", "ACF", "PHP", "Figma"],
             image: "garavagliaauto.webp",
             demoUrl: "https://www.garavagliaauto.it/",
+          },
+          {
+            title: "MySafeDOC",
+            description:
+              "Landing page pentru un serviciu de conformitate legislativa. Am transformat homepage-ul din HTML/CSS static intr-un site WordPress dinamic, structurand continutul cu ACF flexible content pentru a oferi clientului autonomie completa in gestionarea textelor.",
+            tech: ["WordPress", "ACF", "PHP"],
+            image: "mysafedoc.webp",
+            demoUrl: "https://mysafedoc.cloud/",
           },
         ],
       },
