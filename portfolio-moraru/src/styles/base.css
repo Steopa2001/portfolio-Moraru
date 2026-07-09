@@ -7,6 +7,13 @@ html, body {
   height: 100%;
 }
 
+/* consistent horizontal inset for every section on mobile */
+@media (max-width: 767.98px) {
+  .container {
+    padding-inline: 1.5rem;
+  }
+}
+
 body {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   background:
