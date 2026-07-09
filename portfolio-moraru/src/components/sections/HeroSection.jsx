@@ -103,10 +103,9 @@ export default function HeroSection({ text }) {
                 {text.ctaProjects}
               </a>
               <a
-                href="#"
-                className="btn btn-outline-primary disabled"
-                aria-disabled="true"
-                onClick={(e) => e.preventDefault()}
+                href={`${BASE}CV_Stefan_Moraru.pdf`}
+                className="btn btn-outline-primary"
+                download
               >
                 <i className="fa-solid fa-file-arrow-down me-2"></i>
                 {text.ctaDownloadCv}
