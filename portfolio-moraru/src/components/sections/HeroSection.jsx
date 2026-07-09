@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import useReveal from "../../hooks/useReveal";
-import Header from "../Header.jsx";
 
 const BASE = import.meta.env.BASE_URL;
 
-export default function HeroSection({ text, headerText }) {
+export default function HeroSection({ text }) {
   const [heroRef, heroVisible] = useReveal();
   const [typedHeroText, setTypedHeroText] = useState("");
   const [typingDone, setTypingDone] = useState(false);
@@ -70,7 +69,6 @@ export default function HeroSection({ text, headerText }) {
       <div ref={heroRef} className="container py-4">
         <div className="row align-items-center g-4">
           <div className="img-col col-12 col-lg-5 text-center align-self-lg-end">
-            <Header text={headerText} />
             <img
               className="stefan-img img-fluid"
               src={`${BASE}cv-image.webp`}

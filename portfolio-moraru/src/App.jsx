@@ -1,3 +1,4 @@
+import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Homepage from "./pages/Homepage.jsx";
 import BackToTop from "./components/BackToTop.jsx";
@@ -248,8 +249,9 @@ export default function App() {
         <div className="scroll-beam-fill"></div>
       </div>
       <div className="bg-grain" aria-hidden="true"></div>
+      <Header text={text.header} />
       <main>
-        <Homepage headerText={text.header} text={text.homepage} />
+        <Homepage text={text.homepage} />
       </main>
       <BackToTop text={text.backToTop} />
       <Footer

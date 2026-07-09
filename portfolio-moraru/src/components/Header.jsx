@@ -3,26 +3,42 @@ import { useEffect, useState } from "react";
 export default function Header({ text }) {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("home");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const ids = ["home", "about", "projects", "contact"];
+    const ids = ["home", "about", "path", "projects", "contact"];
+    const elements = ids
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
 
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries.filter((entry) => entry.isIntersecting);
+        if (visible.length === 0) return;
+
+        const topMost = visible.reduce((a, b) =>
+          a.boundingClientRect.top < b.boundingClientRect.top ? a : b,
+        );
+
+        setActive(topMost.target.id);
+      },
+      { rootMargin: "-35% 0px -55% 0px", threshold: 0 },
+    );
+
+    elements.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
     const handler = () => {
-      const y = window.scrollY + 120;
-
-      let current = "home";
-
-      for (const id of ids) {
-        const el = document.getElementById(id);
-        if (el && el.offsetTop <= y) current = id;
-      }
-
-      setActive(current);
+      setIsScrolled(window.scrollY > 120);
     };
 
     handler();
     window.addEventListener("scroll", handler, { passive: true });
-    return () => window.removeEventListener("scroll", handler);
+    return () => {
+      window.removeEventListener("scroll", handler);
+    };
   }, []);
 
   const navItems = [
@@ -32,7 +48,7 @@ export default function Header({ text }) {
   ];
 
   return (
-    <nav className="hero-nav">
+    <nav className={`hero-nav ${isScrolled ? "is-scrolled" : ""}`}>
       <button
         type="button"
         className={`hero-nav-toggle ${isOpen ? "open" : ""}`}
