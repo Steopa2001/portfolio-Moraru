@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher.jsx";
 
-export default function Header({ text }) {
+export default function Header({ text, language, onLanguageChange }) {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("home");
   const [isScrolled, setIsScrolled] = useState(false);
@@ -75,6 +76,14 @@ export default function Header({ text }) {
             </li>
           ))}
         </ul>
+        <div className="hero-lang-mobile-only">
+          <LanguageSwitcher
+            language={language}
+            onLanguageChange={onLanguageChange}
+            headerText={text}
+            wrapperClassName="hero-lang-switch"
+          />
+        </div>
       </div>
     </nav>
   );

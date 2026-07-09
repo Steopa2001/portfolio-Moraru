@@ -35,6 +35,10 @@
   padding: 0;
 }
 
+.hero-lang-mobile-only {
+  display: none;
+}
+
 .hero-nav-link {
   display: inline-block;
   font-size: .78rem;
@@ -210,6 +214,20 @@
 
   .hero-nav-link {
     font-size: .72rem;
+  }
+
+  .hero-lang-mobile-only {
+    display: block;
+    width: 100%;
+    margin-top: .5rem;
+    padding-top: .6rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+  }
+
+  .hero-lang-switch .lang-menu-list {
+    right: 0;
+    left: auto;
+    max-width: calc(100vw - 3rem);
   }
 }
 
