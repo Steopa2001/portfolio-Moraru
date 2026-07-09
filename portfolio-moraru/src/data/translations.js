@@ -59,7 +59,7 @@ export const SITE_TEXT = {
           title: "Tecnico di produzione",
           description:
             "Esperienza nel settore metalmeccanico con attività operative. Sviluppate competenze trasversali come lavoro in team, gestione del tempo e attenzione alla qualità.",
-          bullets: ["Teamwork", "Problem solving", "Adattabilita"],
+          bullets: ["Teamwork", "Problem solving", "Adattabilità"],
         },
         booleanCourse: {
           period: "Mag 2025 • Gen 2026",
