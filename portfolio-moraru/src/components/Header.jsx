@@ -43,6 +43,7 @@ export default function Header({ text, language, onLanguageChange }) {
   }, []);
 
   const navItems = [
+    { id: "home", label: text.nav.home },
     { id: "about", label: text.nav.about },
     { id: "projects", label: text.nav.projects },
     { id: "contact", label: text.nav.contact },

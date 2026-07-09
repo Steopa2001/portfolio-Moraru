@@ -30,12 +30,7 @@ export default function PathSection({ path }) {
                 <span className="text-muted small">{path.school.meta}</span>
               </div>
               <h3 className="h5 mb-1">{path.school.title}</h3>
-              <p className="text-muted mb-2">{path.school.description}</p>
-              <ul className="path-list">
-                {path.school.bullets.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+              <p className="text-muted mb-0">{path.school.description}</p>
             </div>
           </article>
 

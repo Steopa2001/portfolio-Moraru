@@ -23,21 +23,6 @@ export default function App() {
     window.localStorage.setItem("portfolio-language", language);
   }, [language]);
 
-  useEffect(() => {
-    if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
-    }
-
-    window.scrollTo(0, 0);
-
-    if (window.location.hash) {
-      window.history.replaceState(
-        null,
-        "",
-        window.location.pathname + window.location.search,
-      );
-    }
-  }, []);
 
   useEffect(() => {
     const root = document.documentElement;

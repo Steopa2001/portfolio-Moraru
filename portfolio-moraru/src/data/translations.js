@@ -11,6 +11,7 @@ export const SITE_TEXT = {
       brandRole: "Junior Web Developer",
       toggleNavigationLabel: "Apri o chiudi menu",
       nav: {
+        home: "Home",
         about: "Chi sono",
         projects: "Progetti",
         contact: "Contatti",
@@ -50,15 +51,14 @@ export const SITE_TEXT = {
           meta: "Lecco, Lombardia",
           title: "Istituto Superiore Statale 'P.A. Fiocchi'",
           description:
-            "Diploma di Istituto Tecnico e Professionale, primo passo verso un metodo di lavoro pratico e concreto.",
-          bullets: ["Diploma conseguito", "Approccio pratico alla risoluzione dei problemi"],
+            "Diploma di Istituto Tecnico e Professionale, con una formazione orientata alla pratica e alla risoluzione di problemi reali.",
         },
         work: {
           period: "2021 • 2025",
           meta: "Minuterie 3M · Lecco",
-          title: "Tecnico Operativo",
+          title: "Tecnico di produzione",
           description:
-            "Tre anni e mezzo in un ambiente lavorativo strutturato: teamwork, rispetto delle scadenze e problem solving quotidiano.",
+            "Esperienza nel settore metalmeccanico con attività operative. Sviluppate competenze trasversali come lavoro in team, gestione del tempo e attenzione alla qualità.",
           bullets: ["Teamwork", "Problem solving", "Adattabilita"],
         },
         booleanCourse: {
@@ -156,6 +156,7 @@ export const SITE_TEXT = {
       brandRole: "Junior Web Developer",
       toggleNavigationLabel: "Open or close navigation",
       nav: {
+        home: "Home",
         about: "About",
         projects: "Projects",
         contact: "Contact",
@@ -195,15 +196,14 @@ export const SITE_TEXT = {
           meta: "Lecco, Lombardy",
           title: "State High School 'P.A. Fiocchi'",
           description:
-            "Technical and Vocational High School Diploma, the first step toward a practical, hands-on way of working.",
-          bullets: ["Diploma obtained", "Early grounding in logic and problem solving"],
+            "Technical and Vocational High School Diploma, with hands-on training focused on solving real-world problems.",
         },
         work: {
           period: "2021 • 2025",
           meta: "Minuterie 3M · Lecco",
-          title: "Operations Technician",
+          title: "Production Technician",
           description:
-            "Three and a half years in a structured work environment: teamwork, meeting deadlines, and daily problem solving.",
+            "Experience in the metalworking industry with hands-on operations. I developed transversal skills such as teamwork, time management, and attention to quality.",
           bullets: ["Teamwork", "Problem solving", "Adaptability"],
         },
         booleanCourse: {
@@ -301,6 +301,7 @@ export const SITE_TEXT = {
       brandRole: "Desarrollador Web Junior",
       toggleNavigationLabel: "Abrir o cerrar navegacion",
       nav: {
+        home: "Inicio",
         about: "Sobre mi",
         projects: "Proyectos",
         contact: "Contacto",
@@ -340,15 +341,14 @@ export const SITE_TEXT = {
           meta: "Lecco, Lombardia",
           title: "Instituto Estatal 'P.A. Fiocchi'",
           description:
-            "Diploma tecnico y profesional, primer paso hacia un metodo de trabajo practico y concreto.",
-          bullets: ["Diploma obtenido", "Primeras bases de logica y resolucion de problemas"],
+            "Diploma tecnico y profesional, con una formacion orientada a la practica y a la resolucion de problemas reales.",
         },
         work: {
           period: "2021 • 2025",
           meta: "Minuterie 3M · Lecco",
-          title: "Tecnico Operativo",
+          title: "Tecnico de produccion",
           description:
-            "Tres anos y medio en un entorno laboral estructurado: trabajo en equipo, cumplimiento de plazos y resolucion de problemas diarios.",
+            "Experiencia en el sector metalmecanico con actividades operativas. Desarrolle competencias transversales como trabajo en equipo, gestion del tiempo y atencion a la calidad.",
           bullets: ["Trabajo en equipo", "Resolucion de problemas", "Adaptabilidad"],
         },
         booleanCourse: {
@@ -446,6 +446,7 @@ export const SITE_TEXT = {
       brandRole: "Dezvoltator Web Junior",
       toggleNavigationLabel: "Deschide sau inchide meniul",
       nav: {
+        home: "Acasa",
         about: "Despre mine",
         projects: "Proiecte",
         contact: "Contact",
@@ -485,15 +486,14 @@ export const SITE_TEXT = {
           meta: "Lecco, Lombardia",
           title: "Liceul de Stat 'P.A. Fiocchi'",
           description:
-            "Diploma tehnica si profesionala, primul pas catre o metoda de lucru practica si concreta.",
-          bullets: ["Diploma obtinuta", "Primele baze de logica si rezolvare de probleme"],
+            "Diploma tehnica si profesionala, cu o pregatire orientata spre practica si rezolvarea problemelor reale.",
         },
         work: {
           period: "2021 • 2025",
           meta: "Minuterie 3M · Lecco",
-          title: "Tehnician Operational",
+          title: "Tehnician de productie",
           description:
-            "Trei ani si jumatate intr-un mediu de lucru structurat: teamwork, respectarea termenelor si rezolvare de probleme zilnica.",
+            "Experienta in sectorul metalmecanic cu activitati operationale. Am dezvoltat competente transversale precum lucrul in echipa, gestionarea timpului si atentia la calitate.",
           bullets: ["Teamwork", "Rezolvare de probleme", "Adaptabilitate"],
         },
         booleanCourse: {
