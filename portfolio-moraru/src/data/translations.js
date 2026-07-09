@@ -39,8 +39,8 @@ export const SITE_TEXT = {
         kicker: "Profilo",
         title: "Chi sono",
         description:
-          "Sono uno sviluppatore web junior con competenze full-stack e un forte orientamento al front-end. Ho completato un corso intensivo di oltre 600 ore come Full-Stack Web Developer con Boolean, durante il quale ho realizzato diversi progetti concreti. Lavoro con React, HTML, CSS e JavaScript per il front-end, e Node.js, Express e MySQL per il back-end.",
-        tech: ["Javascript", "React", "Node.js", "Express", "MySQL"],
+          "Sono uno sviluppatore web junior con competenze full-stack e un forte orientamento al front-end. Ho completato un corso intensivo di oltre 600 ore come Full-Stack Web Developer con Boolean, durante il quale ho realizzato diversi progetti concreti. Ho maturato esperienza concreta con WordPress e PHP, e sono alla ricerca di opportunità professionali come sviluppatore front-end, con la voglia di continuare a crescere su framework moderni come React, Vue e Angular.",
+        tech: ["HTML", "CSS", "Javascript", "React", "Node.js", "Express", "MySQL", "WordPress", "PHP"],
       },
       path: {
         title: "Il mio percorso",
@@ -184,8 +184,8 @@ export const SITE_TEXT = {
         kicker: "Profile",
         title: "About me",
         description:
-          "I am a junior web developer with full-stack skills and a strong front-end focus. I completed an intensive 600+ hour Full-Stack Web Developer program at Boolean, where I built multiple real-world projects. I work with React, HTML, CSS, and JavaScript on the front end, and Node.js, Express, and MySQL on the back end.",
-        tech: ["Javascript", "React", "Node.js", "Express", "MySQL"],
+          "I am a junior web developer with full-stack skills and a strong front-end focus. I completed an intensive 600+ hour Full-Stack Web Developer program at Boolean, where I built multiple real-world projects. I've gained hands-on experience with WordPress and PHP, and I'm now looking for professional opportunities as a front-end developer, eager to keep growing with modern frameworks like React, Vue, and Angular.",
+        tech: ["HTML", "CSS", "Javascript", "React", "Node.js", "Express", "MySQL", "WordPress", "PHP"],
       },
       path: {
         title: "My Journey",
@@ -329,8 +329,8 @@ export const SITE_TEXT = {
         kicker: "Perfil",
         title: "Sobre mi",
         description:
-          "Soy un desarrollador web junior con competencias full-stack y una fuerte orientacion al front-end. Complete un curso intensivo de mas de 600 horas como Full-Stack Web Developer en Boolean, donde realice varios proyectos reales. Trabajo con React, HTML, CSS y JavaScript para el front-end, y Node.js, Express y MySQL para el back-end.",
-        tech: ["Javascript", "React", "Node.js", "Express", "MySQL"],
+          "Soy un desarrollador web junior con competencias full-stack y una fuerte orientacion al front-end. Complete un curso intensivo de mas de 600 horas como Full-Stack Web Developer en Boolean, donde realice varios proyectos reales. He adquirido experiencia concreta con WordPress y PHP, y actualmente busco oportunidades profesionales como desarrollador front-end, con ganas de seguir creciendo en frameworks modernos como React, Vue y Angular.",
+        tech: ["HTML", "CSS", "Javascript", "React", "Node.js", "Express", "MySQL", "WordPress", "PHP"],
       },
       path: {
         title: "Mi recorrido",
@@ -474,8 +474,8 @@ export const SITE_TEXT = {
         kicker: "Profil",
         title: "Despre mine",
         description:
-          "Sunt dezvoltator web junior cu competente full-stack si focus puternic pe front-end. Am finalizat un curs intensiv de peste 600 de ore ca Full-Stack Web Developer la Boolean, unde am realizat mai multe proiecte reale. Lucrez cu React, HTML, CSS si JavaScript pe front-end, iar pe back-end cu Node.js, Express si MySQL.",
-        tech: ["Javascript", "React", "Node.js", "Express", "MySQL"],
+          "Sunt dezvoltator web junior cu competente full-stack si focus puternic pe front-end. Am finalizat un curs intensiv de peste 600 de ore ca Full-Stack Web Developer la Boolean, unde am realizat mai multe proiecte reale. Am acumulat experienta concreta cu WordPress si PHP, iar acum caut oportunitati profesionale ca dezvoltator front-end, cu dorinta de a continua sa cresc pe framework-uri moderne precum React, Vue si Angular.",
+        tech: ["HTML", "CSS", "Javascript", "React", "Node.js", "Express", "MySQL", "WordPress", "PHP"],
       },
       path: {
         title: "Parcursul meu",
