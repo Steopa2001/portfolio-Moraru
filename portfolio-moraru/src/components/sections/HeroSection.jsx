@@ -83,15 +83,18 @@ export default function HeroSection({ text }) {
               aria-label={text.heroGreeting}
             >
               {typedGreeting}
-              <span className={typedName ? "text-primary" : ""}>
+              {!typingDone && !typedName && (
+                <span className="typing-cursor" aria-hidden="true">|</span>
+              )}
+              <span className={`hero-name-block ${typedName ? "text-primary" : ""}`}>
                 {typedName}
                 {showWave && typedName && (
                   <span className="wave-emoji" aria-hidden="true"> 👋</span>
                 )}
+                {!typingDone && typedName && (
+                  <span className="typing-cursor" aria-hidden="true">|</span>
+                )}
               </span>
-              {!typingDone && (
-                <span className="typing-cursor" aria-hidden="true">|</span>
-              )}
             </h1>
             <p className="lead text-muted">{text.heroLead}</p>
             <div className="d-flex gap-3 mt-4">
