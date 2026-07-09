@@ -24,36 +24,19 @@ export default function App() {
   }, [language]);
 
   useEffect(() => {
-    if (!window.location.hash) return;
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
 
-    let raf1 = 0;
-    let raf2 = 0;
+    window.scrollTo(0, 0);
 
-    const alignHashTarget = () => {
-      const target = document.querySelector(window.location.hash);
-      if (!target) return;
-
-      const anchorOffset = parseFloat(
-        window
-          .getComputedStyle(document.documentElement)
-          .getPropertyValue("--anchor-offset"),
+    if (window.location.hash) {
+      window.history.replaceState(
+        null,
+        "",
+        window.location.pathname + window.location.search,
       );
-      const top =
-        target.getBoundingClientRect().top +
-        window.scrollY -
-        (Number.isFinite(anchorOffset) ? anchorOffset : 96);
-
-      window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
-    };
-
-    raf1 = window.requestAnimationFrame(() => {
-      raf2 = window.requestAnimationFrame(alignHashTarget);
-    });
-
-    return () => {
-      if (raf1) window.cancelAnimationFrame(raf1);
-      if (raf2) window.cancelAnimationFrame(raf2);
-    };
+    }
   }, []);
 
   useEffect(() => {
