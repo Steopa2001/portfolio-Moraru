@@ -105,6 +105,14 @@ export const SITE_TEXT = {
         placeholderDesc: "Questo progetto sarà disponibile a breve.",
         projects: [
           {
+            title: "Dotto.",
+            description:
+              "Sito vetrina per un'agenzia di contenuti, costruito da zero con React e TypeScript. Ho curato le animazioni scroll con Framer Motion, il layout responsive con Tailwind CSS e un backend serverless su Vercel per l'invio email tramite Resend API, con deploy automatico da GitHub.",
+            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            image: "dotto-app.webp",
+            demoUrl: "https://dotto-agency.vercel.app/",
+          },
+          {
             title: "Garavaglia Auto",
             description:
               "Sito web per una concessionaria di automobili. Ho replicato il design da Figma in WordPress, utilizzando ACF per i componenti dinamici e PHP per la logica personalizzata. Realizzato in coppia con un collega.",
@@ -249,6 +257,14 @@ export const SITE_TEXT = {
         placeholderTitle: "Work in progress",
         placeholderDesc: "This project will be available soon.",
         projects: [
+          {
+            title: "Dotto.",
+            description:
+              "Showcase website for a content agency, built from scratch with React and TypeScript. I handled scroll animations with Framer Motion, responsive layout with Tailwind CSS, and a serverless backend on Vercel for email delivery via the Resend API, with automatic deploys from GitHub.",
+            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            image: "dotto-app.webp",
+            demoUrl: "https://dotto-agency.vercel.app/",
+          },
           {
             title: "Garavaglia Auto",
             description:
@@ -395,6 +411,14 @@ export const SITE_TEXT = {
         placeholderDesc: "Este proyecto estará disponible pronto.",
         projects: [
           {
+            title: "Dotto.",
+            description:
+              "Sitio vitrina para una agencia de contenidos, construido desde cero con React y TypeScript. Me encargue de las animaciones de scroll con Framer Motion, el layout responsive con Tailwind CSS y un backend serverless en Vercel para el envio de emails mediante la API de Resend, con despliegue automatico desde GitHub.",
+            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            image: "dotto-app.webp",
+            demoUrl: "https://dotto-agency.vercel.app/",
+          },
+          {
             title: "Garavaglia Auto",
             description:
               "Sitio web para un concesionario de automoviles. Replique el diseno de Figma en WordPress, usando ACF para los componentes dinamicos y PHP para la logica personalizada. Realizado junto a un companero.",
@@ -539,6 +563,14 @@ export const SITE_TEXT = {
         placeholderTitle: "În lucru",
         placeholderDesc: "Acest proiect va fi disponibil în curând.",
         projects: [
+          {
+            title: "Dotto.",
+            description:
+              "Site de prezentare pentru o agentie de continut, construit de la zero cu React si TypeScript. M-am ocupat de animatiile de scroll cu Framer Motion, de layout-ul responsive cu Tailwind CSS si de un backend serverless pe Vercel pentru trimiterea de emailuri prin API-ul Resend, cu deploy automat din GitHub.",
+            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
+            image: "dotto-app.webp",
+            demoUrl: "https://dotto-agency.vercel.app/",
+          },
           {
             title: "Garavaglia Auto",
             description:
