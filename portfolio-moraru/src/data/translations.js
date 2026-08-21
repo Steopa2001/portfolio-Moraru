@@ -105,12 +105,12 @@ export const SITE_TEXT = {
         placeholderDesc: "Questo progetto sarà disponibile a breve.",
         projects: [
           {
-            title: "Dotto.",
+            title: "BookTrack",
             description:
-              "Sito vetrina per un'agenzia di contenuti, costruito da zero con React e TypeScript. Ho curato le animazioni scroll con Framer Motion, il layout responsive con Tailwind CSS e un backend serverless su Vercel per l'invio email tramite Resend API, con deploy automatico da GitHub.",
-            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-            image: "dotto-app.webp",
-            demoUrl: "https://dotto-agency.vercel.app/",
+              "Applicazione per tenere traccia dei libri letti, con un'interfaccia React curata nei dettagli: ricerca libri, gestione della libreria personale, stato di lettura, voti, recensioni e statistiche personalizzate. Il frontend è supportato da un backend Node.js/Express con MySQL e autenticazione JWT.",
+            tech: ["React", "TypeScript", "Node.js", "Express", "MySQL"],
+            image: "book-track.png",
+            codeUrl: "https://github.com/moraru-stefan/BookTrack",
           },
           {
             title: "Garavaglia Auto",
@@ -258,12 +258,12 @@ export const SITE_TEXT = {
         placeholderDesc: "This project will be available soon.",
         projects: [
           {
-            title: "Dotto.",
+            title: "BookTrack",
             description:
-              "Showcase website for a content agency, built from scratch with React and TypeScript. I handled scroll animations with Framer Motion, responsive layout with Tailwind CSS, and a serverless backend on Vercel for email delivery via the Resend API, with automatic deploys from GitHub.",
-            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-            image: "dotto-app.webp",
-            demoUrl: "https://dotto-agency.vercel.app/",
+              "App for tracking books you've read, with a carefully crafted React interface: book search, personal library management, reading status, ratings, reviews, and personalized statistics. The frontend is backed by a Node.js/Express backend with MySQL and JWT authentication.",
+            tech: ["React", "TypeScript", "Node.js", "Express", "MySQL"],
+            image: "book-track.png",
+            codeUrl: "https://github.com/moraru-stefan/BookTrack",
           },
           {
             title: "Garavaglia Auto",
@@ -411,12 +411,12 @@ export const SITE_TEXT = {
         placeholderDesc: "Este proyecto estará disponible pronto.",
         projects: [
           {
-            title: "Dotto.",
+            title: "BookTrack",
             description:
-              "Sitio vitrina para una agencia de contenidos, construido desde cero con React y TypeScript. Me encargue de las animaciones de scroll con Framer Motion, el layout responsive con Tailwind CSS y un backend serverless en Vercel para el envio de emails mediante la API de Resend, con despliegue automatico desde GitHub.",
-            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-            image: "dotto-app.webp",
-            demoUrl: "https://dotto-agency.vercel.app/",
+              "Aplicacion para llevar el registro de los libros leidos, con una interfaz en React cuidada al detalle: busqueda de libros, gestion de la biblioteca personal, estado de lectura, valoraciones, resenas y estadisticas personalizadas. El frontend esta respaldado por un backend Node.js/Express con MySQL y autenticacion JWT.",
+            tech: ["React", "TypeScript", "Node.js", "Express", "MySQL"],
+            image: "book-track.png",
+            codeUrl: "https://github.com/moraru-stefan/BookTrack",
           },
           {
             title: "Garavaglia Auto",
@@ -564,12 +564,12 @@ export const SITE_TEXT = {
         placeholderDesc: "Acest proiect va fi disponibil în curând.",
         projects: [
           {
-            title: "Dotto.",
+            title: "BookTrack",
             description:
-              "Site de prezentare pentru o agentie de continut, construit de la zero cu React si TypeScript. M-am ocupat de animatiile de scroll cu Framer Motion, de layout-ul responsive cu Tailwind CSS si de un backend serverless pe Vercel pentru trimiterea de emailuri prin API-ul Resend, cu deploy automat din GitHub.",
-            tech: ["React", "TypeScript", "Tailwind CSS", "Framer Motion"],
-            image: "dotto-app.webp",
-            demoUrl: "https://dotto-agency.vercel.app/",
+              "Aplicatie pentru urmarirea cartilor citite, cu o interfata React lucrata in detaliu: cautare de carti, gestionarea bibliotecii personale, status de citire, evaluari, recenzii si statistici personalizate. Frontend-ul este sustinut de un backend Node.js/Express cu MySQL si autentificare JWT.",
+            tech: ["React", "TypeScript", "Node.js", "Express", "MySQL"],
+            image: "book-track.png",
+            codeUrl: "https://github.com/moraru-stefan/BookTrack",
           },
           {
             title: "Garavaglia Auto",

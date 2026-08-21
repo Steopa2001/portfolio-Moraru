@@ -68,12 +68,12 @@ export default function ShowcaseSection({ showcase, certificatesText }) {
                         ))}
                       </div>
                       <a
-                        href={p.demoUrl}
+                        href={p.demoUrl || p.codeUrl}
                         target="_blank"
                         rel="noreferrer"
                         className="btn btn-primary btn-sm w-100"
                       >
-                        {showcase.demo}
+                        {p.demoUrl ? showcase.demo : showcase.code}
                       </a>
                     </div>
                   </article>
